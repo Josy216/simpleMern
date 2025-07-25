@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 2rem; /* From Dashboard */
+  margin: auto; /* From Dashboard */
+}
+
+/* For Register and Login pages, center the content */
+body.register-body,
+body.login-body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container,
+.login-container {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 0.45rem 0.5rem; /* Slightly different padding from Dashboard (0.4rem vs 0.45rem), using Register/Login value */
+  margin-bottom: 1.2rem; /* Register/Login value, overrides Dashboard's 1rem */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+textarea {
+  resize: vertical; /* From Dashboard */
+}
+
+button {
+  width: 100%; /* From Register/Login, overrides Dashboard */
+  background: #007bff;
+  color: white;
+  padding: 0.6rem; /* From Register/Login, slightly different from Dashboard (0.6rem 1.2rem) */
+  font-size: 1.1rem; /* From Register/Login, overrides Dashboard's 1rem */
+  border: none;
+  border-radius: 4px; /* From Register/Login, overrides Dashboard's 5px */
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+form {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+details {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+details[open] summary {
+  color: #007bff;
+}
+
+.register-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.login-link {
+  margin-top: 15px;
+  text-align: center;
+}
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.register-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+
+details p {
+  margin-top: 0.7rem;
+  color: #444;
+  line-height: 1.4;
+}
